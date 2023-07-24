@@ -5,19 +5,19 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-Task.create([{
+Task.create!([{
     title: "Prepare Breakfast",
-    description: "Make breakfast",
+    description: "Make breakfast...extra data to make it more than 20 characters",
     due_date: DateTime.now,
     status: 0
 }, {
     title: "Prepare Breakfast",
-    description: "Make breakfast",
+    description: "Make breakfast...extra data to make it more than 20 characters",
     due_date: DateTime.now,
     status: 0
 }, {
     title: "Prepare Breakfast",
-    description: "Make breakfast",
+    description: "Make breakfast...extra data to make it more than 20 characters",
     due_date: DateTime.now,
     status: 0
 }])
