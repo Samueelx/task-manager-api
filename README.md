@@ -1,4 +1,4 @@
-# Pizzas-Challenge
+# Task Manager(API)
 A mini Rails application that implements associations.
 ## Description
 This is a simple Rails application that I developed to sharpen my skills on developing Rails applications, Active Record Associations and API development.
