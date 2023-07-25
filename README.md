@@ -1,24 +1,52 @@
-# README
+# Pizzas-Challenge
+A mini Rails application that implements associations.
+## Description
+This is a simple Rails application that I developed to sharpen my skills on developing Rails applications, Active Record Associations and API development.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started
+### Setup Requirements
+- Operating System: Any POSIX based Operating System should suffice.
+- Ruby installed on your system(version 2.7.3 and above).
+- Rails (version 7 and above)
+- Code editor/IDE to view and/or contribute to the project(preferably VScode or RubyMine IDE).
+- Git installed on your system.
 
-Things you may want to cover:
+### Setup
+To clone this repository in your PC, run:
 
-* Ruby version
+        git clone git@github.com:Samueelx/task-manager-api.git
 
-* System dependencies
+`cd` into the project directory and run this command to download the necessary gems/dependencies:
 
-* Configuration
+        bundle install
 
-* Database creation
+## Running the program
+### Migrate the database
+For this application to run, you first need to set up the database schema. To do so, you need to run a migration. Use this command to run the migration(at the root of the project direcory):
 
-* Database initialization
+        rails db:migrate
 
-* How to run the test suite
+Then, populate the database tables with sample data using the following command (at the root of the project direcory):
 
-* Services (job queues, cache servers, search engines, etc.)
+        rails db:seed
 
-* Deployment instructions
+### Running the server
+To run the server, execute the command below in your terminal:
 
-* ...
+        rails s
+
+As the server is running, you can test out the endpoints from [postman](https://www.postman.com/)
+
+The following endpoints are accessible:
+- `GET /tasks`
+- `GET /tasks/:id`
+- `DELETE /tasks/:id`
+- `PATCH /tasks/:id`
+- `POST /tasks`
+- `PUT /tasks/:id`
+
+## Authors
+[Samuel Gitimu](https://github.com/Samueelx)
+
+## License
+This project is under the MIT license.
